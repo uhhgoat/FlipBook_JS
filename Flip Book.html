@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--Matyas Fenyves-->
+<html>
+	<head>
+		<title>Flip book</title>
+		<style>
+			button
+			{
+				background-color:pink ;
+				color:blue ;
+				font-size:25pt ;
+			}
+			img
+			{
+				width:1000px;
+				height:500px ;
+			}
+			body
+			{
+				background-color: green
+			}
+		</style>
+		<script>
+		one = "one.png" ;
+		two = "two.png" ;
+		three = "three.png" ;
+		four = "four.png" ;
+		five = "five.png" ;
+		six = "six.png" ;
+		seven = "seven.png" ;
+		eight = "eight.png" ;
+		nine = "nine.png" ;
+		ten = "ten.png" ;
+		x = 1 ;
+		function display()
+		{
+			if (x == 1)
+			{
+				myElement = document.getElementById("pic") ;
+				myElement.src = one ;
+			}
+			else
+			{
+				if (x == 2)
+				{
+					myElement = document.getElementById("pic") ;
+					myElement.src = two ;
+				}
+				else
+				{
+					if (x == 3)
+					{
+						myElement = document.getElementById("pic") ;
+						myElement.src = three ;
+					}
+					else
+					{
+						if (x == 4)
+						{
+							myElement = document.getElementById("pic") ;
+							myElement.src = four ;
+						}
+						else
+						{
+							if (x == 5)
+							{
+								myElement = document.getElementById("pic") ;
+								myElement.src = five ;
+							}
+							else
+							{
+								if (x == 6)
+								{
+									myElement = document.getElementById("pic") ;
+									myElement.src = six ;
+								}
+								else
+								{
+									if (x == 7)
+									{
+										myElement = document.getElementById("pic") ;
+										myElement.src = seven ;
+									}
+									else
+									{
+										if (x == 8)
+										{
+											myElement = document.getElementById("pic") ;
+											myElement.src = eight ;
+										}
+										else
+										{
+											if (x == 9)
+											{
+												myElement = document.getElementById("pic") ;
+												myElement.src = nine ;
+											}
+											else
+											{
+												if (x == 10)
+												{
+													myElement = document.getElementById("pic") ;
+													myElement.src = ten ;
+												}
+												else
+												{
+													if (x == 11)
+													{
+														x = 1 ;
+														myElement = document.getElementById("pic") ;
+														myElement.src = one ;
+													}
+													else
+													{
+														if (x == 0)
+														{
+															x = 10 ;
+															myElement = document.getElementById("pic") ;
+															myElement.src = ten ;
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<br /><br /><br />
+		<button id "back" onclick = "x = x - 1 ; display() ;">Previous</button>
+		<button id = "next" onclick = "x = x + 1 ; display() ;">Next</button>
+		<br /><br /><br /><br /><br /><br /><br /><br />
+		<img id = "pic"></img>
+	</body>
+	<script>
+		display() ;
+	</script>
+</html>
